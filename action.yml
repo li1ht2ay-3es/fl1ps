@@ -40,8 +40,6 @@ runs:
           echo ""
         }
 
-        # merge mingw-flags
-
 
 
     - shell: bash
