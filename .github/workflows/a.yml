@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: li1ht2ay-3es/fl1ps@build
         with:
-          branch: custom
+          branch: upstream
           arch: ${{ matrix.arch }}
 
           token: ${{ secrets.token }}
