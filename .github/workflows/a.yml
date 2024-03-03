@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-  build-windows:
+  build_windows:
     strategy:
       matrix:
         arch: [x86, x64]
@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: li1ht2ay-3es/fl1ps@build-windows
+      - uses: li1ht2ay-3es/fl1ps@build
         with:
-          token: ${{ secrets.token }}
+          branch: custom
           arch: ${{ matrix.arch }}
+
+          token: ${{ secrets.token }}
